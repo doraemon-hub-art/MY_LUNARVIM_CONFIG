@@ -35,3 +35,14 @@ telescope.setup {
     },
   },
 }
+
+lvim.plugins = {
+  {
+    "f-person/git-blame.nvim",
+    event = "BufRead",
+    config = function()
+      vim.g.gitblame_enabled = 1 -- 默认启用
+    end,
+  },
+}
+
